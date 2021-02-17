@@ -1,5 +1,3 @@
-#!groovy
-
 pipeline {
   agent none
   stages {
@@ -9,5 +7,6 @@ pipeline {
         sh 'docker build -t test:latest .'
       }
     }
+
   }
 }
