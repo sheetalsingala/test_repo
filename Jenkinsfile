@@ -4,7 +4,7 @@ pipeline {
     stage('Docker Build') {
       agent any
       steps {
-        sh 'docker build -t test:latest .'
+        sh 'docker build . --file test/Dockerfile --tag my-image-name:$(date +%s)'
       }
     }
 
