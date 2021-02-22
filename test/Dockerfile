@@ -3,3 +3,4 @@
  COPY . .
  RUN yarn install --producti
  CMD ["node", "src/index.js"]
+ 
